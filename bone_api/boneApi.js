@@ -4,5 +4,9 @@ var BoneApi = function(app){
 
   var Bone= require('../client/src/models/bone');
 
-  
+app.get('/', function(req, res){
+  res.sendFile(path.join(__dirname + '/client/build/index.html'));
+});
+
+
 }

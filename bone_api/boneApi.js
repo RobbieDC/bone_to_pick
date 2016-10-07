@@ -8,5 +8,11 @@ app.get('/', function(req, res){
   res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
 
+//film index
+app.get('/api/bones', function(req, res){
+  res.json(bones);
+});
+
 
 }
+module.exports = BoneApi;

@@ -40,7 +40,7 @@ var Bones = function(){
 
   var bone7 = new Bone({
     name: "Pelvis"
-    fact: ""
+    fact: "This bone is stronger than the skulls"
     image: 
   });
 

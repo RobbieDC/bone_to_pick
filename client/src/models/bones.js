@@ -21,8 +21,8 @@ var Bones = function(){
   });
 
   var bone4 = new Bone({
-    name: "Rib"
-    fact: "You have 24 ribs in total"
+    name: "Humerus"
+    fact: "This connects your shoulder and your forearm"
     image: 
   });
 

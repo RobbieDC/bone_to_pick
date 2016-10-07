@@ -10,3 +10,5 @@ app.get('/', function(req, res){
 
 
 }
+
+module.exports = BoneApi;

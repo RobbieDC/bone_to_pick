@@ -56,5 +56,10 @@ var Bones = function(){
     image: 
   });
 
+  var bone10 = new Bone({
+    name: "Talus"
+    fact: "This is also known as the ankle bone"
+    image: 
+  });
 
 }

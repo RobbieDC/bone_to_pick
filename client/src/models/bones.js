@@ -62,7 +62,7 @@ var Bones = function(){
     // image: 
   });
 
-  return [bone1, bone2, bone3, bone4, bone5, bone6, bone7, bone8, bone9, bone10]
+  return [bone1, bone2, bone3, bone4, bone5, bone6, bone7, bone8, bone9, bone10];
 
 }
 

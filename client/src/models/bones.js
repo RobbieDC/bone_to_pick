@@ -26,6 +26,22 @@ var Bones = function(){
     image: 
   });
 
+  var bone5 = new Bone({
+    name: "Phalanges"
+    fact: "This is the collective name for your 3 top finger bones"
+    image: 
+  });
 
+  var bone6 = new Bone({
+    name: "Ulna"
+    fact: "This bone is essential to everyday functions like throwing a ball or driving a car"
+    image: 
+  });
+
+  var bone7 = new Bone({
+    name: "Pelvis"
+    fact: ""
+    image: 
+  });
 
 }

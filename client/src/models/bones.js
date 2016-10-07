@@ -9,10 +9,10 @@ var Bones = function(){
   });
 
   var bone2 = new Bone({
-    name: 
-    fact: 
+    name: "Clavicle"
+    fact: "This is also called your collar bone"
     image: 
-  })
+  });
 
 
 }

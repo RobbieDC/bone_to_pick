@@ -40,8 +40,15 @@ var Bones = function(){
 
   var bone7 = new Bone({
     name: "Pelvis"
-    fact: "This bone is stronger than the skulls"
+    fact: "This bone is stronger than the skull"
     image: 
   });
+
+  var bone8 = new Bone({
+    name: "Femur"
+    fact: "This bone is the longest bone in the body"
+    image: 
+  });
+
 
 }

@@ -50,5 +50,11 @@ var Bones = function(){
     image: 
   });
 
+  var bone9 = new Bone({
+    name: "Fibula"
+    fact: "This is one of the bones that helps attach the ankle to the knee"
+    image: 
+  });
+
 
 }

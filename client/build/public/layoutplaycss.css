@@ -1,3 +1,7 @@
+/* -------------------------  Notes  */
+
+/*colour code for blue featured on body image: #0198CA*/
+
 
 /* ------------------------    Layout  */
 
@@ -22,21 +26,48 @@
   vertical-align: top;
   width: 40%;
   background-color: cyan;
-  border: 1px solid black;
   margin: 0 auto;
-  
+  padding: 0;
 }
 
+#info_window {
+  display: block;
+  vertical-align: center;
+  background-color: lightslategrey; 
+  border: 1px solid black;
 
-/* ------------------------    Headers*/
+}
+
+#right_container_header {
+  display: block;
+  text-align: center
+  padding: 2px;
+  height: 10%;
+ 
+}
+
+/* ------------------------    Headers   */
 
 h1 {
   text-align: center;
-  font-family: helvetica;
+  font-family: arial;
 }
 
+h3 {
+background: linear-gradient(#66c1df, #0198CA);
+font-family: arial;
+font-size: 1em;
+margin: 0px;
+padding: 4px;
+font-weight: bold;
+}
 
-/*  ------------------------ Images*/
+p {
+  font-family: arial;
+  font-size: 0.8em;
+}
+
+/*  ------------------------ Images     */
 
 #left_container img[src="body_image.png"] {
    max-width:100%;

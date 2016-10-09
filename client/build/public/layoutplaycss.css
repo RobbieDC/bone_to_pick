@@ -33,8 +33,9 @@
 #info_window {
   display: block;
   vertical-align: center;
-  background-color: lightslategrey; 
+  background-color: #eaeded; 
   border: 1px solid black;
+  padding: 0;
 
 }
 
@@ -62,10 +63,6 @@ padding: 4px;
 font-weight: bold;
 }
 
-p {
-  font-family: arial;
-  font-size: 0.8em;
-}
 
 /*  ------------------------ Images     */
 
@@ -73,3 +70,31 @@ p {
    max-width:100%;
    max-height:100%;
 }
+
+#right_container_header img[src="skull_image.jpg"] {
+   max-width:30%;
+   padding: 7px;
+   float: left;
+}
+
+
+/*  ------------------------ p tags    */
+
+
+#info_window.label p {
+font-family: arial;
+font-size: 0.8em;
+color: cyan;
+text-align: left;
+  
+}
+
+#info_window p {
+  font-family: arial;
+  font-size: 0.8em;
+  color: darkslategrey;
+  text-align: left;
+  padding: 6px;
+  line-height: 1.2;
+}
+

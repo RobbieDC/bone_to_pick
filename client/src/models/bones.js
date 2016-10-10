@@ -17,7 +17,8 @@ var Bones = function(){
   var bone3 = new Bone({
     name: "Rib",
     fact: "You have 24 ribs in total",
-    // image: 
+    image: "./public/images/ribs.jpg";
+  
   });
 
   var bone4 = new Bone({

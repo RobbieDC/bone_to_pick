@@ -11,7 +11,7 @@ var Bones = function(){
   var bone2 = new Bone({
     name: "Clavicle",
     fact: "This is also called your collar bone",
-    image: "./public/images/skull.png";
+    image: "./public/images/clavicle.jpg";
   });
 
   var bone3 = new Bone({

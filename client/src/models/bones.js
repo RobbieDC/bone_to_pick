@@ -60,7 +60,7 @@ var Bones = function(){
   var bone10 = new Bone({
     name: "Talus",
     fact: "This is also known as the ankle bone",
-    // image: 
+    image: "./public/images/talus.jpg";
   });
 
   return [bone1, bone2, bone3, bone4, bone5, bone6, bone7, bone8, bone9, bone10];

@@ -42,7 +42,7 @@ var Bones = function(){
   var bone7 = new Bone({
     name: "Pelvis",
     fact: "This bone is stronger than the skull",
-    // image: 
+    image: "./public/images/pelvis.jpg";
   });
 
   var bone8 = new Bone({

@@ -1,10 +1,32 @@
-/*main div*/
+/* -------------------------  Notes  */
+
+/*colour code for blue featured on body image: #0198CA*/
+
+
+/* ///////////// MAIN DIV  ///////////// */
 #image_container {
   position: relative;
   width: 21em;
   height: 60em;
   background-image: url("./images/bones.png"); 
   background-size: cover;
+  border: 1px black solid;
+  float: left;
+}
+
+
+/*///////////// INFO DIV STYLING /////////////*/
+
+
+#info_container {
+  border: 1px solid black;
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  margin-left: 8%;
+  background-color: #f5fcfc;
+  font-family: arial;
+  opacity: 0.95;
 }
 
 /* /////////////BUTTON CSS///////////// */
@@ -15,7 +37,9 @@
   border-radius: 100%;
   width: 5%;
   height: 1.6%;
-  background-color: red;
+  background-color: #8DCACA;
+  border: 2px black solid;
+
 }
 
 #skull_button {
@@ -67,6 +91,24 @@
   top: 91.5%;
   left: 35.5%;
 }
+
+
+/*FONTS*/
+
+h4 {
+background: linear-gradient(#8DCACA, #307B7B);
+font-family: arial;
+font-size: 1em;
+margin: 0px;
+padding: 4px;
+font-weight: bold;
+}
+
+
+p {
+  padding: 5px;
+}
+
 
 
 

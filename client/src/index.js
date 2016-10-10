@@ -1,3 +1,5 @@
+//var infoWindow = require infoWindow.js
+
 var makeRequest = function( url, callback ) {
   var request = new XMLHttpRequest();
   request.open( "GET", url );
@@ -9,7 +11,16 @@ var requestComplete = function() {
   if(this.status !== 200) return;
   var jsonString = this.responseText;
   var bones = JSON.parse(jsonString);
-  console.log( bones );
+  createInfoWindow(bones);
+
+  console.log(bones);
+}
+
+var createInfoWindow = function(data){
+  var infoDiv = createInfoDiv();
+  var infoHeader = createInfoHeader();
+  var infoParagraph = createInfoParagraph();
+  
 }
 
 var app = function() {

@@ -36,7 +36,7 @@ var Bones = function(){
   var bone6 = new Bone({
     name: "Ulna",
     fact: "This bone is essential to everyday functions like throwing a ball or driving a car",
-    // image: 
+    image: "./public/images/ulna.png";
   });
 
   var bone7 = new Bone({

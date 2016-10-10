@@ -48,7 +48,7 @@ var Bones = function(){
   var bone8 = new Bone({
     name: "Femur",
     fact: "This bone is the longest bone in the body",
-    // image: 
+    image: "./public/images/femur.jpg";
   });
 
   var bone9 = new Bone({

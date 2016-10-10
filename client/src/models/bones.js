@@ -24,7 +24,7 @@ var Bones = function(){
   var bone4 = new Bone({
     name: "Humerus",
     fact: "This connects your shoulder and your forearm",
-    // image: 
+    image: "./public/images/humerus.png";
   });
 
   var bone5 = new Bone({

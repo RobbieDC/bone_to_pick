@@ -1,7 +1,72 @@
 /*main div*/
 #image_container {
+  position: relative;
   width: 21em;
   height: 60em;
   background-image: url("./images/bones.png"); 
   background-size: cover;
 }
+
+/* /////////////BUTTON CSS///////////// */
+
+#image_container button {
+  position:absolute;
+  transition: .5s ease;
+  border-radius: 100%;
+  width: 5%;
+  height: 1.6%;
+  background-color: red;
+}
+
+#skull_button {
+  top: 5%;
+  left: 47.5%;
+}
+
+#clavicle_button {
+  top: 18%;
+  left: 34%;
+}
+
+#ribs_button {
+  top: 25%;
+  left: 47.5%;
+}
+
+#humerus_button {
+  top: 30%;
+  left: 74.5%;
+  }
+
+#pelvis_button {
+  top: 41%;
+  left: 63%;
+}
+
+#ulna_button {
+  top: 44%;
+  left: 17.5%;
+}
+
+#phalanges_button {
+  top: 55.5%;
+  left: 85.3%;
+}
+
+#femur_button {
+  top: 58%;
+  left: 32%;
+}
+
+#fibula_button {
+  top: 80%;
+  left: 64%;
+}
+
+#talus_button {
+  top: 91.5%;
+  left: 35.5%;
+}
+
+
+

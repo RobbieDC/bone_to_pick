@@ -58,12 +58,13 @@
 	  createInfoWindow();
 	  console.log(bones);
 	
-	  var handleButtonClick = function(boneObject){
+	  var handleButtonClick = function(){
 	    // var pTag = document.querySelector(.info_header)
-	    console.log("button clicked");
+	    var boneIndex = parseInt(this.className);
+	    console.log(bones[boneIndex]);
 	  }
 	
-	  var skullButton = document.querySelector('#skull_button');
+	  var skullButton = document.getElementsByClassName('0')[0];
 	  skullButton.onclick = handleButtonClick;
 	
 	  var clavicleButton = document.querySelector('#clavicle_button');

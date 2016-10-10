@@ -15,12 +15,24 @@ var requestComplete = function() {
 
   console.log(bones);
 }
+window.onload = function(){
 
 var createInfoWindow = function(data){
-  var infoDiv = createInfoDiv();
   var infoHeader = createInfoHeader();
   var infoParagraph = createInfoParagraph();
-  
+  var infoWindow = document.quereySelector("#info_container");
+}
+
+var createInfoHeader = function(header){
+  var infoHeader = document.createElement('div');
+  div.innerText = ;
+  return div;
+}
+
+var createInfoParagraph = function(){
+  var infoParagraph = document.createElement('p');
+  p.innerText = text + "";
+  return p;
 }
 
 var app = function() {
@@ -28,4 +40,4 @@ var app = function() {
   makeRequest( url, requestComplete );
 }
 
-window.onload = app;
+

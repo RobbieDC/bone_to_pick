@@ -57,28 +57,33 @@
 	  if(this.status !== 200) return;
 	  var jsonString = this.responseText;
 	  var bones = JSON.parse(jsonString);
-	  createInfoWindow(bones);
-	
+	  createInfoWindow();
 	  console.log(bones);
 	}
 	
-	var createInfoWindow = function(data){
-	  var infoHeader = createInfoHeader();
-	  var infoParagraph = createInfoParagraph();
-	  var infoWindow = document.quereySelector("#info_container");
+	var createInfoHeader = function( text ){
+	  var infoHeader = document.createElement('h4');
+	  infoHeader.innerText = text;
+	  return infoHeader;
 	}
 	
-	// var createInfoHeader = function(header){
-	//   var infoHeader = document.createElement('div');
-	//   div.innerText = header;
-	//   return div;
-	// }
+	var createInfoParagraph = function( text ) {
+	  var infoParagraph = document.createElement('p');
+	  infoParagraph.innerText = text;
+	  return infoParagraph;
+	}
 	
-	// var createInfoParagraph = function(){
-	//   var infoParagraph = document.createElement('p');
-	//   p.innerText = text + "";
-	//   return p;
-	// }
+	var appendElements = function( div, header, paragraph ) {
+	  div.appendChild( header );
+	  div.appendChild( paragraph );
+	}
+	
+	var createInfoWindow = function() {
+	  var infoHeader = createInfoHeader("Test Header");
+	  var infoParagraph = createInfoParagraph("test paragraph");
+	  var infoWindow = document.querySelector("#info_container");
+	  appendElements( infoWindow, infoHeader, infoParagraph );
+	}
 	
 	var app = function() {
 	  var url = "http://localhost:3000/api/bones";
@@ -86,7 +91,6 @@
 	}
 	
 	window.onload = app;
-
 
 /***/ }
 /******/ ]);

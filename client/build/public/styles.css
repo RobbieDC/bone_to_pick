@@ -36,6 +36,11 @@
 #humerus_button {
   top: 30%;
   left: 74.5%;
+  }
+
+#pelvis_button {
+  top: 41%;
+  left: 63%;
 }
 
 #ulna_button {
@@ -52,4 +57,5 @@
   top: 58%;
   left: 32%;
 }
+
 

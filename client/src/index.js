@@ -12,10 +12,8 @@ var requestComplete = function() {
   var jsonString = this.responseText;
   var bones = JSON.parse(jsonString);
   createInfoWindow(bones);
-
   console.log(bones);
 }
-window.onload = function(){
 
 var createInfoWindow = function(data){
   var infoHeader = createInfoHeader();
@@ -23,16 +21,16 @@ var createInfoWindow = function(data){
   var infoWindow = document.quereySelector("#info_container");
 }
 
-var createInfoHeader = function(header){
-  var infoHeader = document.createElement('div');
-  div.innerText = ;
-  return div;
+var createInfoHeader = function(){
+  var infoHeader = document.createElement('h4');
+  infoHeader.innerText = ;
+  return infoHeader;
 }
 
 var createInfoParagraph = function(){
   var infoParagraph = document.createElement('p');
-  p.innerText = text + "";
-  return p;
+  infoParagraph.innerText = "";
+  return infoParagraph;
 }
 
 var app = function() {
@@ -40,4 +38,4 @@ var app = function() {
   makeRequest( url, requestComplete );
 }
 
-
+window.onload = app;

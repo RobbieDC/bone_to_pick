@@ -1,0 +1,7 @@
+/*main div*/
+#image_container {
+  width: 21em;
+  height: 60em;
+  background-image: url("./images/bones.png"); 
+  background-size: cover;
+}

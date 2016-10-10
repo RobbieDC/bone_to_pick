@@ -59,7 +59,6 @@ var requestComplete = function() {
     var buttons = document.querySelectorAll( "button" );
     for ( var i = 0; i < buttons.length; i++ ) {
       buttons[i].addEventListener( "click", handleButtonClick );
-      console.log(buttons[i]);
     }
   }
 

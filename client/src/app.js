@@ -1,7 +1,8 @@
-var UI = require('./views/ui');
+// var UI = require('./views/ui');
 
 var app = function(){
-  new UI();
+  // new UI();
+  console.log("hello");
 }
 
 window.onload = app;

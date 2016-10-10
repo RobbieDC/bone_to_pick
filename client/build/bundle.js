@@ -42,21 +42,29 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	var UI = __webpack_require__(1);
+	var makeRequest = function( url, callback ) {
+	  var request = new XMLHttpRequest();
+	  request.open( "GET", url );
+	  request.onload = callback;
+	  request.send();
+	}
 	
-	var app = function(){
-	  new UI();
+	var requestComplete = function() {
+	  if(this.status !== 200) return;
+	  var jsonString = this.responseText;
+	  var bones = JSON.parse(jsonString);
+	  console.log( bones );
+	}
+	
+	var app = function() {
+	  var url = "http://localhost:3000/api/bones";
+	  makeRequest( url, requestComplete );
 	}
 	
 	window.onload = app;
 
-/***/ },
-/* 1 */
-/***/ function(module, exports) {
-
-	//needs completed
 
 /***/ }
 /******/ ]);

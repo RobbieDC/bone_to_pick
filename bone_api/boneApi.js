@@ -9,7 +9,6 @@ var BoneApi = function(app){
     res.json(bones);
   });
 
-
 }
 
 module.exports = BoneApi;

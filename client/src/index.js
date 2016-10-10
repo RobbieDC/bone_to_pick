@@ -1,8 +1,3 @@
-var app = function() {
-  var url = "http://localhost:3000/api/bones";
-  makeRequest( url, requestComplete );
-}
-
 var makeRequest = function( url, callback ) {
   var request = new XMLHttpRequest();
   request.open( "GET", url );
@@ -15,6 +10,11 @@ var requestComplete = function() {
   var jsonString = this.responseText;
   var bones = JSON.parse(jsonString);
   console.log( bones );
+}
+
+var app = function() {
+  var url = "http://localhost:3000/api/bones";
+  makeRequest( url, requestComplete );
 }
 
 window.onload = app;

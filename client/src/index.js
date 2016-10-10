@@ -1,5 +1,3 @@
-//var infoWindow = require infoWindow.js
-
 var makeRequest = function( url, callback ) {
   var request = new XMLHttpRequest();
   request.open( "GET", url );
@@ -11,32 +9,73 @@ var requestComplete = function() {
   if(this.status !== 200) return;
   var jsonString = this.responseText;
   var bones = JSON.parse(jsonString);
-  createInfoWindow();
+  // createInfoWindow();
   console.log(bones);
-}
 
-var createInfoHeader = function( text ){
-  var infoHeader = document.createElement('h4');
-  infoHeader.innerText = text;
-  return infoHeader;
-}
+  var createInfoHeader = function( text ) {
+    var infoHeader = document.createElement('h4');
+    infoHeader.className = "info_header";
+    infoHeader.innerText = text;
+    return infoHeader;
+  }
 
-var createInfoParagraph = function( text ) {
-  var infoParagraph = document.createElement('p');
-  infoParagraph.innerText = text;
-  return infoParagraph;
-}
+  var createInfoParagraph = function( text ) {
+    var infoParagraph = document.createElement('p');
+    infoParagraph.className = "info_paragraph";
+    infoParagraph.innerText = text;
+    return infoParagraph;
+  }
 
-var appendElements = function( div, header, paragraph ) {
-  div.appendChild( header );
-  div.appendChild( paragraph );
-}
+  var appendElements = function( div, header, paragraph ) {
+    div.appendChild( header );
+    div.appendChild( paragraph );
+  }
 
-var createInfoWindow = function() {
-  var infoHeader = createInfoHeader("Test Header");
-  var infoParagraph = createInfoParagraph("test paragraph");
-  var infoWindow = document.querySelector("#info_container");
-  appendElements( infoWindow, infoHeader, infoParagraph );
+  var createInfoWindow = function( headerText, paragraphText ) {
+    var infoHeader = createInfoHeader( headerText );
+    var infoParagraph = createInfoParagraph( paragraphText );
+    var infoWindow = document.querySelector("#info_container");
+    infoWindow.innerHTML = "";
+    appendElements( infoWindow, infoHeader, infoParagraph );
+  }
+
+  var handleButtonClick = function(){
+    var boneIndex = parseInt(this.className);
+    var bone = bones[boneIndex];
+    console.log(bone);
+    createInfoWindow( bone.name, bone.fact );
+  }
+
+  var skullButton = document.getElementsByClassName('0')[0];
+  skullButton.onclick = handleButtonClick;
+
+  var clavicleButton = document.getElementsByClassName('1')[0];
+  clavicleButton.onclick = handleButtonClick;
+
+  var ribsButton = document.getElementsByClassName('2')[0];
+  ribsButton.onclick = handleButtonClick;
+
+  var humerusButton = document.getElementsByClassName('3')[0];
+  humerusButton.onclick = handleButtonClick;
+
+  var phalangesButton = document.getElementsByClassName('4')[0];
+  phalangesButton.onclick = handleButtonClick;
+
+  var ulnaButton = document.getElementsByClassName('5')[0];
+  ulnaButton.onclick = handleButtonClick;
+
+  var pelvisButton = document.getElementsByClassName('6')[0];
+  pelvisButton.onclick = handleButtonClick;
+  
+  var femurButton = document.getElementsByClassName('7')[0];
+  femurButton.onclick = handleButtonClick;
+
+  var fibulaButton = document.getElementsByClassName('8')[0];
+  fibulaButton.onclick = handleButtonClick;
+
+  var talusButton = document.getElementsByClassName('9')[0];
+  talusButton.onclick = handleButtonClick;
+
 }
 
 var app = function() {

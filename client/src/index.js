@@ -55,7 +55,6 @@ var requestComplete = function() {
   }
 
   var addEventListenersToButtons = function() {
-    var imageDiv = document.querySelector( "#image_container" );
     var buttons = document.querySelectorAll( "button" );
     for ( var i = 0; i < buttons.length; i++ ) {
       buttons[i].addEventListener( "click", handleButtonClick );

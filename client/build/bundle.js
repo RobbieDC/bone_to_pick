@@ -94,31 +94,31 @@
 	  var skullButton = document.getElementsByClassName('0')[0];
 	  skullButton.onclick = handleButtonClick;
 	
-	  var clavicleButton = document.querySelector('#clavicle_button');
+	  var clavicleButton = document.getElementsByClassName('1')[0];
 	  clavicleButton.onclick = handleButtonClick;
 	
-	  var ribsButton = document.querySelector('#ribs_button');
+	  var ribsButton = document.getElementsByClassName('2')[0];
 	  ribsButton.onclick = handleButtonClick;
 	
-	  var humerusButton = document.querySelector('#humerus_button');
+	  var humerusButton = document.getElementsByClassName('3')[0];
 	  humerusButton.onclick = handleButtonClick;
 	
-	  var pelvisButton = document.querySelector('#pelvis_button');
-	  pelvisButton.onclick = handleButtonClick;
-	
-	  var ulnaButton = document.querySelector('#ulna_button');
-	  ulnaButton.onclick = handleButtonClick;
-	
-	  var phalangesButton = document.querySelector('#phalanges_button');
+	  var phalangesButton = document.getElementsByClassName('4')[0];
 	  phalangesButton.onclick = handleButtonClick;
 	
-	  var femurButton = document.querySelector('#femur_button');
+	  var ulnaButton = document.getElementsByClassName('5')[0];
+	  ulnaButton.onclick = handleButtonClick;
+	
+	  var pelvisButton = document.getElementsByClassName('6')[0];
+	  pelvisButton.onclick = handleButtonClick;
+	  
+	  var femurButton = document.getElementsByClassName('7')[0];
 	  femurButton.onclick = handleButtonClick;
 	
-	  var fibulaButton = document.querySelector('#fibula_button');
+	  var fibulaButton = document.getElementsByClassName('8')[0];
 	  fibulaButton.onclick = handleButtonClick;
 	
-	  var talusButton = document.querySelector('#talus_button');
+	  var talusButton = document.getElementsByClassName('9')[0];
 	  talusButton.onclick = handleButtonClick;
 	
 	}

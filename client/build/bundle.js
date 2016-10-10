@@ -44,8 +44,6 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	//var infoWindow = require infoWindow.js
-	
 	var makeRequest = function( url, callback ) {
 	  var request = new XMLHttpRequest();
 	  request.open( "GET", url );
@@ -59,6 +57,37 @@
 	  var bones = JSON.parse(jsonString);
 	  createInfoWindow();
 	  console.log(bones);
+	
+	  var skullButton = document.querySelector('#skull_button');
+	  skullButton.onclick = handleButtonClick;
+	
+	  var clavicleButton = document.querySelector('#clavicle_button');
+	  clavicleButton.onclick = handleButtonClick;
+	
+	  var ribsButton = document.querySelector('#ribs_button');
+	  ribsButton.onclick = handleButtonClick;
+	
+	  var humerusButton = document.querySelector('#humerus_button');
+	  humerusButton.onclick = handleButtonClick;
+	
+	  var pelvisButton = document.querySelector('#pelvis_button');
+	  pelvisButton.onclick = handleButtonClick;
+	
+	  var ulnaButton = document.querySelector('#ulna_button');
+	  ulnaButton.onclick = handleButtonClick;
+	
+	  var phalangesButton = document.querySelector('#phalanges_button');
+	  phalangesButton.onclick = handleButtonClick;
+	
+	  var femurButton = document.querySelector('#femur_button');
+	  femurButton.onclick = handleButtonClick;
+	
+	  var fibulaButton = document.querySelector('#fibula_button');
+	  fibulaButton.onclick = handleButtonClick;
+	
+	  var talusButton = document.querySelector('#talus_button');
+	  talusButton.onclick = handleButtonClick;
+	
 	}
 	
 	var createInfoHeader = function( text ){

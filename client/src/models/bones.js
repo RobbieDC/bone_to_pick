@@ -5,13 +5,13 @@ var Bones = function(){
   var bone1 = new Bone({
     name: "Skull",
     fact: "This part of the body protects your brain",
-    // image: null;
+    image: "./public/images/skull.png";
   });
 
   var bone2 = new Bone({
     name: "Clavicle",
     fact: "This is also called your collar bone",
-    // image: 
+    image: "./public/images/skull.png";
   });
 
   var bone3 = new Bone({

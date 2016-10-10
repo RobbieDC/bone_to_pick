@@ -35,6 +35,7 @@ var requestComplete = function() {
     var infoHeader = createInfoHeader( headerText );
     var infoParagraph = createInfoParagraph( paragraphText );
     var infoWindow = document.querySelector("#info_container");
+    infoWindow.innerHTML = "";
     appendElements( infoWindow, infoHeader, infoParagraph );
   }
 

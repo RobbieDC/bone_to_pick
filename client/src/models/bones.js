@@ -30,7 +30,7 @@ var Bones = function(){
   var bone5 = new Bone({
     name: "Phalanges",
     fact: "This is the collective name for your 3 top finger bones",
-    // image: 
+    image: "./public/images/phalanges.jpg";
   });
 
   var bone6 = new Bone({

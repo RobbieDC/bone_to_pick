@@ -12,6 +12,11 @@ var requestComplete = function() {
   createInfoWindow();
   console.log(bones);
 
+  var handleButtonClick = function(boneObject){
+    // var pTag = document.querySelector(.info_header)
+    console.log("button clicked");
+  }
+
   var skullButton = document.querySelector('#skull_button');
   skullButton.onclick = handleButtonClick;
 
@@ -44,15 +49,15 @@ var requestComplete = function() {
 
 }
 
-var createInfoHeader = function( text ){
+var createInfoHeader = function() {
   var infoHeader = document.createElement('h4');
-  infoHeader.innerText = text;
+  infoHeader.className = "info_header";
   return infoHeader;
 }
 
 var createInfoParagraph = function( text ) {
   var infoParagraph = document.createElement('p');
-  infoParagraph.innerText = text;
+  infoParagraph.className = "info_paragraph";
   return infoParagraph;
 }
 

@@ -1,5 +1,5 @@
 var DigestiveApi = function( app ) {
-  var digestives = require("../client/src/models/digestives")
+  var digestives = require("../client/src/models/digestives")();
 
   app.get( "/api/digestives", function( req, res ) {
     res.json( digestives )
@@ -7,4 +7,4 @@ var DigestiveApi = function( app ) {
 
 }
 
-module.exports = DigestivesApi;
+module.exports = DigestiveApi;

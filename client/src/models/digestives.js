@@ -17,33 +17,33 @@ var Digestives = function() {
   var digestive3 = new Digestive({
     name: "Liver",
     fact: "The liver is able to regenerate dead or damaged tissue",
-    image: ""
+    image: "./public/images/liver.jpg"
   });
 
   var digestive4 = new Digestive({
     name: "Gallbladder",
     fact: "The gallbladder holds bile produced in the liver",
-    image: ""
+    image: "./public/images/gallbladder.jpg"
   });
 
   var digestive5 = new Digestive({
     name: "Stomach",
     fact: "The stomach has a pH of 1.5 - 3.5",
-    image: ""
+    image: "./public/images/stomach.jpg"
   });
 
 
   var digestive6 = new Digestive({
     name: "Small intestine",
     fact: "The small intestine is around 10 feet in length!",
-    image: ""
+    image: "./public/images/small.jpeg"
   });
 
 
   var digestive7 = new Digestive({
     name: "Large intestine",
     fact: "The large intestine is an important factor in re absorbing water and vitamins",
-    image: ""
+    image: "./public/images/large.jpg"
   });
 
 

@@ -44,6 +44,8 @@
 /* 0 */
 /***/ function(module, exports) {
 
+	// comment
+	
 	var makeRequest = function( url, callback ) {
 	  var request = new XMLHttpRequest();
 	  request.open( "GET", url );

@@ -32,26 +32,26 @@ var Muscles = function(){
   });
 
   var muscle6 = new Muscle({
-    name: "Lumbricallis", 
-    fact: "",
+    name: "Lumbricalis", 
+    fact: "fact to be entered",
     image: ""
   });
 
   var muscle7 = new Muscle({
     name: "Quadriceps", 
-    fact: "",
+    fact: "Made up of four parts",
     image: ""
   });
 
   var muscle8 = new Muscle({
-    name: "Dorsi Flexors",
-    fact: "",
+    name: "Dorsiflexor",
+    fact: "This mucle is involved with lifting the foot",
     image: ""
   });
 
   var muscle9 = new Muscle({
     name: "Tibialis Anterior", 
-    fact: "",
+    fact: "I will enter a fact",
     image: ""
   });
   return [muscle1, muscle2, muscle3, muscle4, muscle5, muscle6, muscle7, muscle8, muscle9]

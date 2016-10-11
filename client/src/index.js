@@ -51,7 +51,12 @@ var requestComplete = function() {
     appendElements( infoWindow, infoHeader, infoImg, infoParagraph );
   }
 
-  var handleButtonClick = function() {
+  var overlay = function() {
+    overlayDiv = document.getElementById("overlay");
+    overlayDiv.style.visibility = (overlayDiv.style.visibility == "visible") ? "hidden" : "visible";
+  }
+
+  var handleSkeletonButtonClick = function() {
     var boneIndex = parseInt(this.className);
     var bone = bones[boneIndex];
     console.log(bone);
@@ -59,21 +64,24 @@ var requestComplete = function() {
     overlay();
   }
 
-  var overlay = function() {
-    overlayDiv = document.getElementById("overlay");
-    overlayDiv.style.visibility = (overlayDiv.style.visibility == "visible") ? "hidden" : "visible";
+  var addEventListenersToButtons = function() {
+    var skeletonButtons = document.querySelectorAll( ".skeleton_button" );
+    for ( var i = 0; i < skeletonButtons.length; i++ ) {
+      skeletonButtons[i].addEventListener( "click", handleSkeletonButtonClick );
+    }
   }
 
-  var addEventListenersToButtons = function() {
-    var buttons = document.querySelectorAll( "button" );
-    for ( var i = 0; i < buttons.length; i++ ) {
-      buttons[i].addEventListener( "click", handleButtonClick );
+  var addEventListenersToNavButtons = function() {
+    var navButtons = document.querySelectorAll(".nav_button");
+    for (var i = 0; i < navButtons.length; i++ ) {
+      navButtons[i].addEventListener("click", handleNavButtonClick);
     }
   }
 
   addEventListenersToButtons();
 
 }
+
 
 var app = function() {
   var url = "http://localhost:3000/api/bones";

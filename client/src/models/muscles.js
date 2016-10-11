@@ -3,7 +3,7 @@ var Muscle = require('./muscle');
 var Muscles = function(){
 
   var muscle1 = new Muscle({
-    name: "Orbicularis oculi", head 
+    name: "Orbicularis oculi", 
     fact: "",
     image: ""
   });

@@ -12,7 +12,6 @@ var requestComplete = function() {
   if(this.status !== 200) return;
   var jsonString = this.responseText;
   var bones = JSON.parse(jsonString);
-  console.log(bones);
 
   var createInfoHeader = function( text ) {
     var infoHeader = document.createElement('h4');
@@ -46,17 +45,8 @@ var requestComplete = function() {
     var infoImg = createInfoImg( imgSrc )
     var infoParagraph = createInfoParagraph( paragraphText );
     var infoWindow = document.querySelector("#info_container");
-    // var createCloseButton = <a class="close" href="#">[X]<
     infoWindow.innerHTML = "";
     appendElements( infoWindow, infoHeader, infoImg, infoParagraph );
-  }
-
-  var handleButtonClick = function() {
-    var boneIndex = parseInt(this.className);
-    var bone = bones[boneIndex];
-    console.log(bone);
-    createInfoWindow( bone.name, bone.fact, bone.image );
-    overlay();
   }
 
   var overlay = function() {
@@ -64,16 +54,38 @@ var requestComplete = function() {
     overlayDiv.style.visibility = (overlayDiv.style.visibility == "visible") ? "hidden" : "visible";
   }
 
+  var handleSkeletonButtonClick = function() {
+    var boneIndex = parseInt(this.className);
+    var bone = bones[boneIndex];
+    createInfoWindow( bone.name, bone.fact, bone.image );
+    overlay();
+  }
+
   var addEventListenersToButtons = function() {
-    var buttons = document.querySelectorAll( "button" );
-    for ( var i = 0; i < buttons.length; i++ ) {
-      buttons[i].addEventListener( "click", handleButtonClick );
+    var skeletonButtons = document.querySelectorAll( ".skeleton_button" );
+    for ( var i = 0; i < skeletonButtons.length; i++ ) {
+      skeletonButtons[i].addEventListener( "click", handleSkeletonButtonClick );
+    }
+  }
+
+  var handleNavButtonClick = function() {
+    var imageContainer = document.querySelector("#image_container");
+    var imageName = this.id;
+    imageContainer.style.backgroundImage = 'url("./public/images/' + imageName + '.png")';
+  }
+
+  var addEventListenersToNavButtons = function() {
+    var navButtons = document.querySelectorAll(".nav_button");
+    for (var i = 0; i < navButtons.length; i++ ) {
+      navButtons[i].addEventListener("click", handleNavButtonClick);
     }
   }
 
   addEventListenersToButtons();
+  addEventListenersToNavButtons();
 
 }
+
 
 var app = function() {
   var url = "http://localhost:3000/api/bones";

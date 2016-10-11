@@ -65,7 +65,7 @@ li button:hover {
   position: relative;
   width: 12.6em;
   height: 36em;
-  background-image: url("./images/bones.png"); 
+  background-image: url("./images/bones.png");
   background-size: cover;
   border: 1px black solid;
   display: inline-block;
@@ -111,6 +111,28 @@ li button:hover {
   background-color: #8DCACA;
   border: 2px black solid;
 }
+
+
+#image_container button:hover {
+animation-name: pulse_animation;
+animation-duration: 1000ms;
+transform-origin:70% 70%;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+@keyframes pulse_animation {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.1); }
+  40% { transform: scale(1.2); }
+  50% { transform: scale(1.3); }
+  60% { transform: scale(1.2); }
+  70% { transform: scale(1.1); }
+  80% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+
 
 #skull_button {
   top: 5%;
@@ -164,6 +186,10 @@ li button:hover {
 
 
 /*FONTS*/
+
+h1 {
+  font-family: arial;
+}
 
 h4 {
   background: linear-gradient(#8DCACA, #307B7B);

@@ -18,7 +18,16 @@
 /*///////////// INFO DIV STYLING /////////////*/
 
 
-
+#overlay {
+     visibility: visible;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width:20;
+     height:50;
+     text-align:center;
+     z-index: 1000;
+}
 
 #info_container {
   border: 1px solid black;

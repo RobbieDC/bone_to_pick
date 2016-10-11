@@ -9,7 +9,7 @@ var Digestives = function() {
   });
 
   var digestive2 = new Digestive({
-    name: "Esophagus",
+    name: "Oesophagus",
     fact: "The esophagus is around 9-10 inches long, and connects your mouth to  your stomach",
     image: ""
   });

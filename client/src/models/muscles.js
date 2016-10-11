@@ -15,19 +15,19 @@ var Muscles = function(){
   });
 
   var muscle3 = new Muscle({
-    name: "Pectoralis Mbicepajor",
-    fact: "Also known as the pecs",
+    name: "Pectoralis Major Muscle",
+    fact: "A large fan shaped muscle that covers much of the chest. ",
     image: ""
   });
 
   var muscle4 = new Muscle({
     name: "Bicep", 
-    fact: "Biceps are attached to the bone by tendons",
+    fact: "The Bicep is made up of two main muscles, Bicep Brachii muscles one is short and the other is long",
     image: ""
   });
   var muscle5 = new Muscle({
-    name: "Anterior Forearm", 
-    fact: "These are the main muscles used when kayaking",
+    name: "Brachioradialis Muscle", 
+    fact: "Muscle in the forearm which aids in flexing the elbow",
     image: ""
   });
 

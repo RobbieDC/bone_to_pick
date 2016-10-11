@@ -4,19 +4,19 @@ var Muscles = function(){
 
   var muscle1 = new Muscle({
     name: "Orbicularis oculi", 
-    fact: "",
+    fact: "Made up of three parts. It controls the movement of the eyelid",
     image: ""
   });
 
   var muscle2 = new Muscle({
     name: "Deltoids",
-    fact: "",
+    fact: "The Deltoids is a rounded triangular shaped muscle",
     image: ""
   });
 
   var muscle3 = new Muscle({
-    name: "Pectorialis Major",
-    fact: "",
+    name: "Pectoralis Major",
+    fact: "Also known as the pecs",
     image: ""
   });
 

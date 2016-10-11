@@ -6,7 +6,7 @@
 /* ///////////// OUTER CONTAINER ///////////// */
 
 body {
-  background-color: #CEF0F0;
+  background-color: #f5fcfc;
 }
 
 #outer_container {
@@ -95,7 +95,7 @@ li button:hover {
   display: inline-block;
   width: 50%;
   margin-left: 8%;
-  background-color: #f5fcfc;
+  background-color: white;
   font-family: arial;
   opacity: 0.95;
 }

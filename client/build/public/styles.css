@@ -112,6 +112,28 @@ li button:hover {
   border: 2px black solid;
 }
 
+
+#image_container button:hover {
+animation-name: pulse_animation;
+animation-duration: 5000ms;
+transform-origin:70% 70%;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+@keyframes pulse_animation {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.3); }
+  40% { transform: scale(1.7); }
+  50% { transform: scale(2); }
+  60% { transform: scale(2); }
+  70% { transform: scale(1.7); }
+  80% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+
+
 #skull_button {
   top: 5%;
   left: 47.5%;

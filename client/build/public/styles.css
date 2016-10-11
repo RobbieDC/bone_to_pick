@@ -115,7 +115,7 @@ li button:hover {
 
 #image_container button:hover {
 animation-name: pulse_animation;
-animation-duration: 5000ms;
+animation-duration: 1000ms;
 transform-origin:70% 70%;
 animation-iteration-count: infinite;
 animation-timing-function: linear;
@@ -123,12 +123,12 @@ animation-timing-function: linear;
 
 @keyframes pulse_animation {
   0% { transform: scale(1); }
-  30% { transform: scale(1.3); }
-  40% { transform: scale(1.7); }
-  50% { transform: scale(2); }
-  60% { transform: scale(2); }
-  70% { transform: scale(1.7); }
-  80% { transform: scale(1.3); }
+  30% { transform: scale(1.1); }
+  40% { transform: scale(1.2); }
+  50% { transform: scale(1.3); }
+  60% { transform: scale(1.2); }
+  70% { transform: scale(1.1); }
+  80% { transform: scale(1.05); }
   100% { transform: scale(1); }
 }
 
@@ -186,6 +186,10 @@ animation-timing-function: linear;
 
 
 /*FONTS*/
+
+h1 {
+  font-family: arial;
+}
 
 h4 {
   background: linear-gradient(#8DCACA, #307B7B);

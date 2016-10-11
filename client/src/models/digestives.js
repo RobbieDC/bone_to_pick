@@ -62,7 +62,7 @@ var Digestives = function() {
 
 
 
-  return [digestive1, digestive2, digestive3, digestive4, digestive5, digestive6, digestive7, digestive8, ]
+  return [digestive1, digestive2, digestive3, digestive4, digestive5, digestive6, digestive7, digestive8, digestive9]
 
 }
 

@@ -56,7 +56,7 @@ var Digestives = function() {
 
   var digestive9 = new Digestive({
     name: "Anus",
-    fact: "",
+    fact: "The anus is the final section of the GI tract",
     image: ""
   });
 

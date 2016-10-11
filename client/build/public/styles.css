@@ -50,7 +50,7 @@ li a:hover:not(.active) {
   position: relative;
   width: 12.6em;
   height: 36em;
-  background-image: url("./images/bones.png"); 
+  background-image: url("./images/bones.png");
   background-size: cover;
   border: 1px black solid;
   /*display: inline-block;*/

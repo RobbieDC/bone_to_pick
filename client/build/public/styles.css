@@ -5,10 +5,14 @@
 
 /* ///////////// OUTER CONTAINER ///////////// */
 
+body {
+  background-color: #CEF0F0;
+}
+
 #outer_container {
-  align-content: center;
   width: 60%;
   margin: auto;
+/*  background-color: #CEF0F0;*/
 }
 
 #header {
@@ -24,6 +28,7 @@
   /*float: right;*/
   margin: 0em;
   vertical-align: top;
+  margin-left: -0.7%;
 }
 
 ul {
@@ -56,6 +61,7 @@ li button:hover {
 
 /* ///////////// MAIN DIV  ///////////// */
 #image_container {
+  background-color: white;
   position: relative;
   width: 12.6em;
   height: 36em;
@@ -63,8 +69,9 @@ li button:hover {
   background-size: cover;
   border: 1px black solid;
   display: inline-block;
-  float: left;
+  /*float: left;*/
   vertical-align: top;
+  margin-left: 22%;
 }
 
 
@@ -103,7 +110,6 @@ li button:hover {
   height: 2.7%;
   background-color: #8DCACA;
   border: 2px black solid;
-
 }
 
 #skull_button {

@@ -54,7 +54,7 @@ var Muscles = function(){
     fact: "",
     image: ""
   });
-  return [muscle1, muscle2]
+  return [muscle1, muscle2, muscle3, muscle4, muscle5, muscle6, muscle7, muscle8, muscle9]
 
 }
 

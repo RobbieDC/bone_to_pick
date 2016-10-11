@@ -71,6 +71,17 @@ var requestComplete = function() {
     }
   }
 
+  var handleNavButtonClick = function() {
+    var imageContainer = document.querySelector("#image_container");
+    console.log(imageContainer);
+    // imageContainer.style.backgroundImage = 'url("./images/fibia.png")';
+    var bodyImage = window.getComputedStyle(imageContainer).getPropertyValue("background-image");
+    console.log(bodyImage);
+    bodyImage = 'url("./images/fibia.png")';
+    bodyImage = 'url("http://localhost:3000/public/images/flesh.png")';
+    console.log(bodyImage);
+  }
+
   var addEventListenersToNavButtons = function() {
     var navButtons = document.querySelectorAll(".nav_button");
     for (var i = 0; i < navButtons.length; i++ ) {
@@ -79,6 +90,7 @@ var requestComplete = function() {
   }
 
   addEventListenersToButtons();
+  addEventListenersToNavButtons();
 
 }
 

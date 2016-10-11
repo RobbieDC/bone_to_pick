@@ -10,7 +10,7 @@ var Muscles = function(){
 
   var muscle2 = new Muscle({
     name: "Deltoids",
-    fact: "The Deltoids is a rounded triangular shaped muscle",
+    fact: "The Deltoids is a rounded triangular shaped muscle at your shoulder",
     image: ""
   });
 
@@ -32,8 +32,8 @@ var Muscles = function(){
   });
 
   var muscle6 = new Muscle({
-    name: "Lumbricalis", 
-    fact: "fact to be entered",
+    name: "Lumbrical Muscles", 
+    fact: "These are four small fleshy muscles in between the tendons which are connected to the fingers",
     image: ""
   });
 
@@ -44,14 +44,14 @@ var Muscles = function(){
   });
 
   var muscle8 = new Muscle({
-    name: "Dorsiflexor",
-    fact: "This mucle is involved with lifting the foot",
+    name: "Soleus Muscle",
+    fact: "This muscle is one the main muscle in the calf",
     image: ""
   });
 
   var muscle9 = new Muscle({
     name: "Tibialis Anterior", 
-    fact: "I will enter a fact",
+    fact: "This muscle is vital in connecting bottom of the leg and the foot together to form the ankle",
     image: ""
   });
   return [muscle1, muscle2, muscle3, muscle4, muscle5, muscle6, muscle7, muscle8, muscle9]

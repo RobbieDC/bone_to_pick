@@ -20,6 +20,33 @@ var Digestives = function() {
     image: ""
   });
 
+  var digestive4 = new Digestive({
+    name: "Gallbladder",
+    fact: "The gallbladder holds bile produced in the liver",
+    image: ""
+  });
+
+  var digestive5 = new Digestive({
+    name: "Stomach",
+    fact: "The stomach has a pH of 1.5 - 3.5",
+    image: ""
+  });
+
+
+  var digestive6 = new Digestive({
+    name: "Small intestine",
+    fact: "The small intestine is around 10 feet in length!",
+    image: ""
+  });
+
+
+  var digestive7 = new Digestive({
+    name: "Large intestine",
+    fact: "The large intestine is an important factor in re absorbing water and vitamins",
+    image: ""
+  });
+
+  
   var digestive = new Digestive({
     name: "Liver",
     fact: "",
@@ -28,7 +55,7 @@ var Digestives = function() {
 
 
 
-  return [digestive1, digestive2]
+  return [digestive1, digestive2, digestive3, digestive4, digestive5, digestive6, digestive7]
 
 }
 

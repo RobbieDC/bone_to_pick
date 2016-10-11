@@ -53,6 +53,7 @@
 	  request.send();
 	}
 	
+	
 	var requestComplete = function() {
 	  if(this.status !== 200) return;
 	  var jsonString = this.responseText;
@@ -91,6 +92,7 @@
 	    var infoImg = createInfoImg( imgSrc )
 	    var infoParagraph = createInfoParagraph( paragraphText );
 	    var infoWindow = document.querySelector("#info_container");
+	    // var createCloseButton = <a class="close" href="#">[X]<
 	    infoWindow.innerHTML = "";
 	    appendElements( infoWindow, infoHeader, infoImg, infoParagraph );
 	  }
@@ -100,6 +102,12 @@
 	    var bone = bones[boneIndex];
 	    console.log(bone);
 	    createInfoWindow( bone.name, bone.fact, bone.image );
+	    overlay();
+	  }
+	
+	  var overlay = function() {
+	    overlayDiv = document.getElementById("overlay");
+	    overlayDiv.style.visibility = (overlayDiv.style.visibility == "visible") ? "hidden" : "visible";
 	  }
 	
 	  var addEventListenersToButtons = function() {

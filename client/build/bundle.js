@@ -51,6 +51,7 @@
 	  request.send();
 	}
 	
+	
 	var requestComplete = function() {
 	  if(this.status !== 200) return;
 	  var jsonString = this.responseText;
@@ -98,6 +99,12 @@
 	    var bone = bones[boneIndex];
 	    console.log(bone);
 	    createInfoWindow( bone.name, bone.fact, bone.image );
+	    overlay();
+	  }
+	
+	  var overlay = function() {
+	    overlayDiv = document.getElementById("overlay");
+	    overlayDiv.style.visibility = (overlayDiv.style.visibility == "visible") ? "hidden" : "visible";
 	  }
 	
 	  var addEventListenersToButtons = function() {

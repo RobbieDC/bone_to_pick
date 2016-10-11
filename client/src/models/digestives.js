@@ -11,7 +11,7 @@ var Digestives = function() {
   var digestive2 = new Digestive({
     name: "Oesophagus",
     fact: "The esophagus is around 9-10 inches long, and connects your mouth to  your stomach",
-    image: ""
+    image: "./public/images/stomach.jpg"
   });
 
   var digestive3 = new Digestive({
@@ -50,7 +50,7 @@ var Digestives = function() {
   var digestive8 = new Digestive({
     name: "Appendix",
     fact: "The appendix is not a needed organ, and there is some debate over what it was used for",
-    image: ""
+    image: "./public/images/Appendicitis.jpeg"
   });
 
 

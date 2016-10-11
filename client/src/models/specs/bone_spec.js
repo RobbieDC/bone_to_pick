@@ -20,5 +20,8 @@ describe('Bone', function(){
     assert.equal("The test bone is connected to the... other test bone.", testBone.fact);
   });
 
+  it('should have a image', function(){
+    assert.equal("nope.jpg", testBone.image);
+  });
 
 });

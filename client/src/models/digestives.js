@@ -46,16 +46,23 @@ var Digestives = function() {
     image: ""
   });
 
-  
-  var digestive = new Digestive({
-    name: "Liver",
+
+  var digestive8 = new Digestive({
+    name: "Appendix",
+    fact: "The appendix is not a needed organ, and there is some debate over what it was used for",
+    image: ""
+  });
+
+
+  var digestive9 = new Digestive({
+    name: "Anus",
     fact: "",
     image: ""
   });
 
 
 
-  return [digestive1, digestive2, digestive3, digestive4, digestive5, digestive6, digestive7]
+  return [digestive1, digestive2, digestive3, digestive4, digestive5, digestive6, digestive7, digestive8, ]
 
 }
 

@@ -12,6 +12,8 @@ before(function(){
     image: "nope.jpg"});
 });
 
-
+it('should have a name', function(){
+  assert.equal("Test Bone", testBone.name);
+});
 
 });

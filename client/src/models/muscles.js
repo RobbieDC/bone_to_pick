@@ -15,19 +15,19 @@ var Muscles = function(){
   });
 
   var muscle3 = new Muscle({
-    name: "Pectoralis Major",
+    name: "Pectoralis Mbicepajor",
     fact: "Also known as the pecs",
     image: ""
   });
 
   var muscle4 = new Muscle({
     name: "Bicep", 
-    fact: "",
+    fact: "Biceps are attached to the bone by tendons",
     image: ""
   });
   var muscle5 = new Muscle({
     name: "Anterior Forearm", 
-    fact: "",
+    fact: "These are the main muscles used when kayaking",
     image: ""
   });
 

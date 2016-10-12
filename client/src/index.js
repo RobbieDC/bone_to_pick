@@ -1,5 +1,3 @@
-// comment
-
 var makeRequest = function( url, callback ) {
   var request = new XMLHttpRequest();
   request.open( "GET", url );
@@ -11,7 +9,8 @@ var makeRequest = function( url, callback ) {
 var requestComplete = function() {
   if(this.status !== 200) return;
   var jsonString = this.responseText;
-  var bones = JSON.parse(jsonString);
+  var bodyData = JSON.parse(jsonString);
+  console.log(bodyData);
 
   var createInfoHeader = function( text ) {
     var infoHeader = document.createElement('h4');
@@ -56,16 +55,46 @@ var requestComplete = function() {
 
   var handleBonesButtonClick = function(event) {
     var boneIndex = parseInt(this.className);
-    var bone = bones[boneIndex];
+    var bone = bodyData.bones[boneIndex];
     createInfoWindow( bone.name, bone.fact, bone.image );
     overlay();
     console.log(event);
   }
 
-  var addEventListenersToButtons = function() {
+  var handleMuscleButtonClick = function(event) {
+    var muscleIndex = parseInt(this.className);
+    var muscle = bodyData.muscles[muscleIndex];
+    createInfoWindow( muscle.name, muscle.fact, muscle.image );
+    overlay();
+    console.log(event);
+  }
+
+  var handleDigestiveButtonClick = function(event) {
+    var digestiveIndex = parseInt(this.className);
+    var digestive = bodyData.digestives[digestiveIndex];
+    createInfoWindow( digestive.name, digestive.fact, digestive.image );
+    overlay();
+    console.log(event);
+  }
+
+  var addEventListenersToBonesButtons = function() {
     var bonesButtons = document.querySelectorAll( ".bones_button" );
     for ( var i = 0; i < bonesButtons.length; i++ ) {
       bonesButtons[i].addEventListener( "click", handleBonesButtonClick );
+    }
+  }
+
+  var addEventListenersToMuscleButtons = function() {
+    var muscleButtons = document.querySelectorAll( ".muscle_button" );
+    for ( var i = 0; i < muscleButtons.length; i++ ) {
+      muscleButtons[i].addEventListener( "click", handleMuscleButtonClick );
+    }
+  }
+
+  var addEventListenersToDigestiveButtons = function() {
+    var digestiveButtons = document.querySelectorAll( ".digestive_button" );
+    for ( var i = 0; i < digestiveButtons.length; i++ ) {
+      digestiveButtons[i].addEventListener( "click", handleDigestiveButtonClick );
     }
   }
 
@@ -88,14 +117,16 @@ var requestComplete = function() {
     }
   }
 
-  addEventListenersToButtons();
+  addEventListenersToBonesButtons();
+  addEventListenersToMuscleButtons();
+  addEventListenersToDigestiveButtons();
   addEventListenersToNavButtons();
 
 }
 
 
 var app = function() {
-  var url = "http://localhost:3000/api/bones";
+  var url = "http://localhost:3000/api/body";
   makeRequest( url, requestComplete );
 }
 

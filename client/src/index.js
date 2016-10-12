@@ -53,7 +53,7 @@ var requestComplete = function() {
     overlayDiv.style.visibility = (overlayDiv.style.visibility == "visible") ? "hidden" : "visible";
   }
 
-  var handleSkeletonButtonClick = function(event) {
+  var handleBonesButtonClick = function(event) {
     var boneIndex = parseInt(this.className);
     var bone = bones[boneIndex];
     createInfoWindow( bone.name, bone.fact, bone.image );
@@ -61,14 +61,34 @@ var requestComplete = function() {
     console.log(event);
   }
 
-  var addEventListenersToButtons = function( buttonClass ) {
-    var buttons = document.querySelectorAll( buttonClass );
-    for ( var i = 0; i < buttons.length; i++ ) {
-      buttons[i].addEventListener( "click", handleSkeletonButtonClick );
+  var addEventListenersToBonesButtons = function() {
+    var bonesButtons = document.querySelectorAll( ".bones_button" );
+    for ( var i = 0; i < bonesButtons.length; i++ ) {
+      bonesButtons[i].addEventListener( "click", handleBonesButtonClick );
     }
   }
 
+  var addEventListenersToMuscleButtons = function() {
+    var bonesButtons = document.querySelectorAll( ".muscle_button" );
+    for ( var i = 0; i < bonesButtons.length; i++ ) {
+      bonesButtons[i].addEventListener( "click", handleBonesButtonClick );
+    }
+  }
+
+  var addEventListenersToDigestiveButtons = function() {
+    var bonesButtons = document.querySelectorAll( ".digestive_button" );
+    for ( var i = 0; i < bonesButtons.length; i++ ) {
+      bonesButtons[i].addEventListener( "click", handleBonesButtonClick );
+    }
+  }
+
+  var clearButtons = function(){
+    var bonesButtons = document.getElementById( "bones_button_div" );
+    bonesButtons.style.visibility = 'hidden';
+  }
+
   var handleNavButtonClick = function() {
+    clearButtons();
     var imageContainer = document.querySelector("#image_container");
     var imageName = this.id;
     imageContainer.style.backgroundImage = 'url("./public/images/' + imageName + '.png")';
@@ -82,7 +102,7 @@ var requestComplete = function() {
   }
 
   addEventListenersToButtons(".muscle_button");
-  addEventListenersToButtons(".skeleton_button");
+  addEventListenersToButtons(".bones_button");
   addEventListenersToButtons(".digestive_button");
   addEventListenersToNavButtons();
 

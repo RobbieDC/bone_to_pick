@@ -54,15 +54,7 @@ var Digestives = function() {
   });
 
 
-  var digestive9 = new Digestive({
-    name: "Anus",
-    fact: "The anus is the final section of the GI tract",
-    image: ""
-  });
-
-
-
-  return [digestive1, digestive2, digestive3, digestive4, digestive5, digestive6, digestive7, digestive8, digestive9]
+  return [digestive1, digestive2, digestive3, digestive4, digestive5, digestive6, digestive7, digestive8]
 
 }
 

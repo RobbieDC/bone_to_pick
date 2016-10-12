@@ -88,7 +88,8 @@ var requestComplete = function() {
 
 
 var app = function() {
-  var url = "http://localhost:3000/api/bones";
+  var apiNames = [ "bones", "muscles", "digestives" ];
+  var url = "http://localhost:3000/api/" + api_name;
   makeRequest( url, requestComplete );
 }
 

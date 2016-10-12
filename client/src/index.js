@@ -54,11 +54,12 @@ var requestComplete = function() {
     overlayDiv.style.visibility = (overlayDiv.style.visibility == "visible") ? "hidden" : "visible";
   }
 
-  var handleSkeletonButtonClick = function() {
+  var handleSkeletonButtonClick = function(event) {
     var boneIndex = parseInt(this.className);
     var bone = bones[boneIndex];
     createInfoWindow( bone.name, bone.fact, bone.image );
     overlay();
+    console.log(event);
   }
 
   var addEventListenersToButtons = function() {

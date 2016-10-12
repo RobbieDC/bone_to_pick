@@ -69,16 +69,16 @@ var requestComplete = function() {
   }
 
   var addEventListenersToMuscleButtons = function() {
-    var bonesButtons = document.querySelectorAll( ".muscle_button" );
-    for ( var i = 0; i < bonesButtons.length; i++ ) {
-      bonesButtons[i].addEventListener( "click", handleBonesButtonClick );
+    var muscleButtons = document.querySelectorAll( ".muscle_button" );
+    for ( var i = 0; i < muscleButtons.length; i++ ) {
+      muscleButtons[i].addEventListener( "click", handleBonesButtonClick );
     }
   }
 
   var addEventListenersToDigestiveButtons = function() {
-    var bonesButtons = document.querySelectorAll( ".digestive_button" );
-    for ( var i = 0; i < bonesButtons.length; i++ ) {
-      bonesButtons[i].addEventListener( "click", handleBonesButtonClick );
+    var digestiveButtons = document.querySelectorAll( ".digestive_button" );
+    for ( var i = 0; i < digestiveButtons.length; i++ ) {
+      digestiveButtons[i].addEventListener( "click", handleBonesButtonClick );
     }
   }
 

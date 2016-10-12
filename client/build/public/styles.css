@@ -6,13 +6,23 @@
 /* ///////////// OUTER CONTAINER ///////////// */
 
 body {
-  background-color: #f5fcfc;
+  background-color: white;
+  background-image: url("./images/background.jpg");
+  background-color: #CEF0F0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+ 
 }
 
 #outer_container {
   width: 60%;
   margin: auto;
-/*  background-color: #CEF0F0;*/
+  background-color: #CEF0F0;
+  opacity: 0.95;
+  border: 1px solid black;
+
 }
 
 #header {
@@ -74,6 +84,7 @@ li button:hover {
   /*float: left;*/
   vertical-align: top;
   margin-left: 22%;
+  margin-bottom: 5%;
 }
 
 

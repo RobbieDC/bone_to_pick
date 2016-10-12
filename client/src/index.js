@@ -99,8 +99,9 @@ var requestComplete = function() {
   }
 
   var clearButtons = function(){
-    var bonesButtons = document.getElementById( "bones_button_div" );
-    bonesButtons.style.visibility = 'hidden';
+    document.getElementById( "bones_button_div" ).style.visibility = 'hidden';
+    document.getElementById( "muscle_button_div" ).style.visibility = 'hidden';
+    document.getElementById( "digestive_button_div" ).style.visibility = 'hidden';
   }
 
   var handleNavButtonClick = function() {
@@ -108,6 +109,7 @@ var requestComplete = function() {
     var imageContainer = document.querySelector("#image_container");
     var imageName = this.id;
     imageContainer.style.backgroundImage = 'url("./public/images/' + imageName + '.png")';
+    document.getElementById( imageName+"_button_div" ).style.visibility = 'visible';
   }
 
   var addEventListenersToNavButtons = function() {

@@ -187,6 +187,60 @@ animation-timing-function: linear;
   left: 35.5%;
 }
 
+#orb_button {
+  top: 5%;
+  left: 47.5%;
+}
+
+#delt_button {
+  top: 18%;
+  left: 34%;
+}
+
+#pecs_button {
+  top: 25%;
+  left: 47.5%;
+}
+
+#bicep_button {
+  top: 30%;
+  left: 74.5%;
+  }
+
+#brach_button {
+  top: 41%;
+  left: 63%;
+}
+
+/*#ulna_button {
+  top: 44%;
+  left: 17.5%;
+}*/
+
+#lumb_button {
+  top: 55.5%;
+  left: 85.3%;
+}
+
+#quads_button {
+  top: 58%;
+  left: 32%;
+}
+
+#soleus_button {
+  top: 80%;
+  left: 64%;
+}
+
+#tibialis_button {
+  top: 91.5%;
+  left: 35.5%;
+}
+
+.body_button {
+  visibility: hidden;
+}
+
 
 /*FONTS*/
 

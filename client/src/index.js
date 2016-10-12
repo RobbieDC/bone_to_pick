@@ -54,7 +54,7 @@ var requestComplete = function() {
     overlayDiv.style.visibility = (overlayDiv.style.visibility == "visible") ? "hidden" : "visible";
   }
 
-  var handleSkeletonButtonClick = function(event) {
+  var handleBonesButtonClick = function(event) {
     var boneIndex = parseInt(this.className);
     var bone = bones[boneIndex];
     createInfoWindow( bone.name, bone.fact, bone.image );
@@ -63,13 +63,19 @@ var requestComplete = function() {
   }
 
   var addEventListenersToButtons = function() {
-    var skeletonButtons = document.querySelectorAll( ".skeleton_button" );
-    for ( var i = 0; i < skeletonButtons.length; i++ ) {
-      skeletonButtons[i].addEventListener( "click", handleSkeletonButtonClick );
+    var bonesButtons = document.querySelectorAll( ".bones_button" );
+    for ( var i = 0; i < bonesButtons.length; i++ ) {
+      bonesButtons[i].addEventListener( "click", handleBonesButtonClick );
     }
   }
 
+  var clearButtons = function(){
+    var bonesButtons = document.getElementById( "bones_button_div" );
+    bonesButtons.style.visibility = 'hidden';
+  }
+
   var handleNavButtonClick = function() {
+    clearButtons();
     var imageContainer = document.querySelector("#image_container");
     var imageName = this.id;
     imageContainer.style.backgroundImage = 'url("./public/images/' + imageName + '.png")';

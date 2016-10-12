@@ -81,24 +81,24 @@ li button:hover {
 #overlay {
   visibility: hidden;
   position: fixed;
-  left: 35%;
+  left: 50%;
   top: 34%;
-  width: 60%;
-  height: 60% ;
-  text-align:center;
-  z-index: 1000;
+  width: 20%;
+/*  height: 60% ;*/
+  /*text-align:center;
+  z-index: 1000;*/
 }
 
 #info_container {
   border: 1px solid black;
-  position: relative;
+/*  position: relative;*/
   display: inline-block;
-  width: 50%;
+  /*width: 50%;*/
   /*margin-left: 8%;*/
   background-color: white;
   font-family: arial;
   opacity: 0.95;
-  overflow: visible;
+ /* overflow: visible;*/
 }
 
 /* /////////////BUTTON CSS///////////// */

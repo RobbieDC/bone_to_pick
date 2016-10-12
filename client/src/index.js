@@ -1,6 +1,5 @@
 var makeRequest = function( url, callback ) {
   var request = new XMLHttpRequest();
-  var apiNames = [ "bones", "muscles", "digestives" ];
   request.open( "GET", url );
   request.onload = callback;
   request.send();
@@ -10,7 +9,8 @@ var makeRequest = function( url, callback ) {
 var requestComplete = function() {
   if(this.status !== 200) return;
   var jsonString = this.responseText;
-  var bones = JSON.parse(jsonString);
+  var bodyData = JSON.parse(jsonString);
+  console.log(bodyData);
 
   var createInfoHeader = function( text ) {
     var infoHeader = document.createElement('h4');
@@ -88,7 +88,7 @@ var requestComplete = function() {
 
 
 var app = function() {
-  var url = "http://localhost:3000/api/bones";
+  var url = "http://localhost:3000/api/body";
   makeRequest( url, requestComplete );
 }
 

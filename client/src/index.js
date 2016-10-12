@@ -1,31 +1,9 @@
 var makeRequest = function( url, callback ) {
-  var request1 = new XMLHttpRequest();
-  var request2 = new XMLHttpRequest();
-  var request3 = new XMLHttpRequest();
-
-  var url1 = url + "bones";
-  var url2 = url + "muscles";
-  var url3 = url + "digestives";
-
-  request1.open( "GET", url );
-  request2.open( "GET", url );
-  request3.open( "GET", url );
-
-  if (request1.onload && request2.onload && request3.onload) {
-    callback;
-  }
-
-  request1.send();
-  request2.send();
-  request3.send();
-
-  // var apiNames = [ "bones", "muscles", "digestives" ];
-  // for ( var i = 0; i < apiNames.length; i++ ) {
-
-  // }
-
-  // request1.onload = callback;
-
+  var request = new XMLHttpRequest();
+  var apiNames = [ "bones", "muscles", "digestives" ];
+  request.open( "GET", url );
+  request.onload = callback;
+  request.send();
 }
 
 
@@ -109,7 +87,7 @@ var requestComplete = function() {
 
 
 var app = function() {
-  var url = "http://localhost:3000/api/";
+  var url = "http://localhost:3000/api/bones";
   makeRequest( url, requestComplete );
 }
 

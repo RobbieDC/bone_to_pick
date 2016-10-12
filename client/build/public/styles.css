@@ -98,6 +98,7 @@ li button:hover {
   background-color: white;
   font-family: arial;
   opacity: 0.95;
+  overflow: visible;
 }
 
 /* /////////////BUTTON CSS///////////// */

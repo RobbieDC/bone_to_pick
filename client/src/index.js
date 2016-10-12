@@ -61,10 +61,10 @@ var requestComplete = function() {
     console.log(event);
   }
 
-  var addEventListenersToButtons = function() {
-    var skeletonButtons = document.querySelectorAll( ".skeleton_button" );
-    for ( var i = 0; i < skeletonButtons.length; i++ ) {
-      skeletonButtons[i].addEventListener( "click", handleSkeletonButtonClick );
+  var addEventListenersToButtons = function( buttonClass ) {
+    var buttons = document.querySelectorAll( buttonClass );
+    for ( var i = 0; i < buttons.length; i++ ) {
+      buttons[i].addEventListener( "click", handleSkeletonButtonClick );
     }
   }
 
@@ -81,7 +81,9 @@ var requestComplete = function() {
     }
   }
 
-  addEventListenersToButtons();
+  addEventListenersToButtons(".muscle_button");
+  addEventListenersToButtons(".skeleton_button");
+  addEventListenersToButtons(".digestive_button");
   addEventListenersToNavButtons();
 
 }

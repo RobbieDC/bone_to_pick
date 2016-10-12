@@ -5,4 +5,3 @@ var Body = function(options) {
 }
 
 module.exports = Body;
-

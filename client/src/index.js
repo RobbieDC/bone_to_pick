@@ -1,7 +1,6 @@
-// comment
-
 var makeRequest = function( url, callback ) {
   var request = new XMLHttpRequest();
+  var apiNames = [ "bones", "muscles", "digestives" ];
   request.open( "GET", url );
   request.onload = callback;
   request.send();

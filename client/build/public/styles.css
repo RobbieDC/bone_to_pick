@@ -253,28 +253,28 @@ animation-timing-function: linear;
 }
 
 #gallb_button {
-  top: 29%;
-  left: 72%;
+  top: 32%;
+  left: 40%;
   }
 
 #stomach_button {
-  top: 38%;
-  left: 18%;
+  top: 30%;
+  left: 54%;
 }
 
 #small_button {
-  top: 52%;
-  left: 82%;
+  top: 37%;
+  left: 47%;
 }
 
 #large_button {
-  top: 58%;
-  left: 32%;
+  top: 41.5%;
+  left: 58%;
 }
 
 #appendix_button {
-  top: 84%;
-  left: 63%;
+  top: 43%;
+  left: 36%;
 }
 
 /*#tibialis_button {

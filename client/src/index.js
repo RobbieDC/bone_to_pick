@@ -55,8 +55,24 @@ var requestComplete = function() {
 
   var handleBonesButtonClick = function(event) {
     var boneIndex = parseInt(this.className);
-    var bone = bones[boneIndex];
+    var bone = bodyData.bones[boneIndex];
     createInfoWindow( bone.name, bone.fact, bone.image );
+    overlay();
+    console.log(event);
+  }
+
+  var handleMuscleButtonClick = function(event) {
+    var muscleIndex = parseInt(this.className);
+    var muscle = bodyData.muscles[muscleIndex];
+    createInfoWindow( muscle.name, muscle.fact, muscle.image );
+    overlay();
+    console.log(event);
+  }
+
+  var handleDigestiveButtonClick = function(event) {
+    var digestiveIndex = parseInt(this.className);
+    var digestive = bodyData.digestives[digestiveIndex];
+    createInfoWindow( digestive.name, digestive.fact, digestive.image );
     overlay();
     console.log(event);
   }
@@ -71,14 +87,14 @@ var requestComplete = function() {
   var addEventListenersToMuscleButtons = function() {
     var muscleButtons = document.querySelectorAll( ".muscle_button" );
     for ( var i = 0; i < muscleButtons.length; i++ ) {
-      muscleButtons[i].addEventListener( "click", handleBonesButtonClick );
+      muscleButtons[i].addEventListener( "click", handleMuscleButtonClick );
     }
   }
 
   var addEventListenersToDigestiveButtons = function() {
     var digestiveButtons = document.querySelectorAll( ".digestive_button" );
     for ( var i = 0; i < digestiveButtons.length; i++ ) {
-      digestiveButtons[i].addEventListener( "click", handleBonesButtonClick );
+      digestiveButtons[i].addEventListener( "click", handleDigestiveButtonClick );
     }
   }
 
@@ -101,9 +117,9 @@ var requestComplete = function() {
     }
   }
 
-  addEventListenersToButtons(".muscle_button");
-  addEventListenersToButtons(".bones_button");
-  addEventListenersToButtons(".digestive_button");
+  addEventListenersToBonesButtons();
+  addEventListenersToMuscleButtons();
+  addEventListenersToDigestiveButtons();
   addEventListenersToNavButtons();
 
 }

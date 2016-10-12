@@ -3,16 +3,16 @@ var bonesData = require("./bones")();
 var musclesData = require("./muscles")();
 var digestivesData = require("./digestives")();
 
-var Bodys = function() {
+var BodyData = function() {
 
-  var body = new Body({
+  var bodyData = new Body({
     bones: bonesData,
     muscles: musclesData,
     digestives: digestivesData
   });
 
-  return body;
+  return bodyData;
 
 }
 
-module.exports = Bodys;
+module.exports = BodyData;

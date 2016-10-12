@@ -5,7 +5,6 @@ var makeRequest = function( url, callback ) {
   request.send();
 }
 
-
 var requestComplete = function() {
   if(this.status !== 200) return;
   var jsonString = this.responseText;
@@ -50,7 +49,8 @@ var requestComplete = function() {
 
   var overlay = function() {
     overlayDiv = document.getElementById("overlay");
-    overlayDiv.style.visibility = (overlayDiv.style.visibility == "visible") ? "hidden" : "visible";
+    // overlayDiv.style.visibility = (overlayDiv.style.visibility == "visible") ? "hidden" : "visible";
+    overlayDiv.style.visibility = 'visible';
   }
 
   var handleBonesButtonClick = function(event) {

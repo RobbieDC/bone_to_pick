@@ -23,12 +23,12 @@ var Muscles = function(){
   var muscle4 = new Muscle({
     name: "Bicep", 
     fact: "The Bicep is made up of two main muscles, Bicep Brachii muscles one is short and the other is long",
-    image: "./public/images/Biceps-brachii-muscle.png"
+    image: "./public/images/bicep.png"
   });
   var muscle5 = new Muscle({
     name: "Brachioradialis Muscle", 
     fact: "Muscle in the forearm which aids in flexing the elbow",
-    image: "./public/images/Brachioradialis.png"
+    image: "./public/images/Brachioradialis.gif"
   });
 
   var muscle6 = new Muscle({

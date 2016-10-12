@@ -12,21 +12,20 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
- 
 }
 
 #outer_container {
-  width: 60%;
+  width: 50%;
   margin: auto;
   background-color: #CEF0F0;
   opacity: 0.95;
-  border: 1px solid black;
-
+  /*border: 1px solid black;*/
 }
 
 #header {
   text-align: center;
+  margin-bottom: 1.5%;
+/*  font-family: ariel*/
 }
 
 
@@ -84,7 +83,7 @@ li button:hover {
   /*float: left;*/
   vertical-align: top;
   margin-left: 22%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 
@@ -95,7 +94,7 @@ li button:hover {
 #overlay {
   visibility: hidden;
   position: fixed;
-  left: 50%;
+  left: 52.75%;
   top: 34%;
   width: 200px;
 /*  height: 60% ;*/
@@ -301,7 +300,8 @@ animation-timing-function: linear;
 /*FONTS*/
 
 h1 {
-  font-family: arial;
+  font-family: sans-serif;
+  padding-top: 2%;
 }
 
 h4 {
